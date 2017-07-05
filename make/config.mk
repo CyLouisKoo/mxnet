@@ -45,8 +45,8 @@ USE_CUDA = 0
 # USE_CUDA_PATH = /usr/local/cuda
 USE_CUDA_PATH = NONE
 
-NVCCFLAGS_ARCH = -gencode arch=compute_35,code=sm_35 \
-                 -gencode arch=compute_50,code=sm_50 \
+NVCCFLAGS_ARCH = -gencode=arch=compute_35,code=sm_35 \
+                 -gencode=arch=compute_50,code=sm_50 \
                  -gencode=arch=compute_52,code=sm_52 \
                  -gencode=arch=compute_52,code=compute_52
 
